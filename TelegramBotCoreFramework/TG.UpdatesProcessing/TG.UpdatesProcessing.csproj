@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Google.Cloud.PubSub.V1" Version="3.6.0" />
+      <PackageReference Include="PexelsDotNetSDK" Version="1.0.11" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Analytics\Analytics.csproj" />
+      <ProjectReference Include="..\CommunicationChat\CommunicationChat.csproj" />
+      <ProjectReference Include="..\Helpers\Helpers.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="BotCommands\Analytics" />
+    </ItemGroup>
+
+</Project>
